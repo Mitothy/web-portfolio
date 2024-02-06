@@ -161,6 +161,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999; /* High z-index to ensure it's on top */
 }
 .navbar--items > ul {
   list-style: none;
@@ -746,3 +747,128 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+
+/* Start of Portfolio Hover*/
+.portfolio--section--img > img {
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.portfolio--section--img:hover > img {
+  transform: scale(1.05); /* Scale the image up slightly on hover */
+}
+/* End of Portfolio Hover*/
+.experience-section {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.experience-section h1,
+.experience-section h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+/* Add specific styles for your tech stack icons here */
+
+.experiences {
+  display: grid;
+  /* Create three columns of equal width, each with a minimum width of 250px */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /* Set the max-width to ensure cards don't get too stretched on larger screens */
+  max-width: 1500px; /* Adjust the max-width as needed */
+  margin: auto; /* Center the grid horizontally */
+}
+
+.experience-card {
+  display: flex;
+  padding: 42.6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42.6px;
+  border-radius: 8px;
+  border: 1.33px solid #006b6a;
+  /* Set a minimum width for the cards */
+  min-width: 250px;
+  /* Remove flex: 1 0 0; as it's not needed with grid */
+}
+
+.experience-card h3 {
+  font-size: 1.25rem;
+}
+
+.experience-icons {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Media query for smaller screens to adjust the number of columns */
+@media (max-width: 1200px) {
+  .experiences {
+    /* Adjust the number of columns based on the screen width */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.tech-stack-section {
+  display: flex;
+  padding: 112px 84.3px; /* This will override the padding: 1rem; from the second .tech-stack-section rule */
+  flex-direction: column;
+  align-items: center; /* Changed from flex-start to center for horizontal centering */
+  gap: 80px;
+  background-color: var(--bg-shade);
+  text-align: center; /* Ensures that text within the section is centered */
+}
+
+.section--title {
+  align-self: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tech-stack-section {
+  padding: 112px 84.3px;
+  background-color: var(--bg-shade);
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align children to the start of the cross axis */
+}
+
+.tech-stack-title-container {
+  align-self: flex-start; /* Align the title to the start of the main axis */
+}
+
+.tech-stack-title {
+  font-size: 28px;
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.tech-stack-icons-container {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  flex-wrap: wrap; /* Allow icons to wrap onto multiple lines if needed */
+  gap: 1rem;
+  width: 100%; /* Ensure the container takes up the full width */
+}
+
+.tech-stack-icon img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  width: 200px; /* Adjust width as needed */
+  height: auto;
+}
+
+.tech-stack-icon:hover img {
+  filter: none; /* Restores original icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}

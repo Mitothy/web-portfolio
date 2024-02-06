@@ -24,6 +24,8 @@
             "title": "Webflow Development",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         }
+        
+        
     ],
     "portfolio": [
         {
@@ -72,6 +74,23 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "author_name": "Kathryn Murphy",
             "author_designation": "McDonald's"
+        }
+    ],
+    "techStacks": [
+        {
+            "id": "mongoDB",
+            "name": "mongoDb",
+            "icon": "./img/mongodb.png"
+        },
+        {
+            "id": "SQL",
+            "name": "SQL",
+            "icon": "./img/sql.png"
+        },
+        {
+            "id": "Python",
+            "name": "Python",
+            "icon": "./img/python.png"
         }
     ]
 }
