@@ -245,6 +245,8 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 106.667px;
+  background: var(--bg-shade);
+
 }
 .skills--section--heading {
   color: var(--heading-color);
@@ -507,7 +509,6 @@ input[type="checkbox"] {
 /* Contact End */
 
 /* Footer Start */
-/* Footer Starts */
 .footer--container {
   display: flex;
   padding: 106.667px 85.333px;
@@ -827,21 +828,13 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center; /* Changed from flex-start to center for horizontal centering */
   gap: 80px;
-  background-color: var(--bg-shade);
   text-align: center; /* Ensures that text within the section is centered */
+  background: white;
 }
 
 .section--title {
   align-self: left;
   font-family: 'Roboto', sans-serif;
-}
-
-.tech-stack-section {
-  padding: 112px 84.3px;
-  background-color: var(--bg-shade);
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: flex-start; /* Align children to the start of the cross axis */
 }
 
 .tech-stack-title-container {
