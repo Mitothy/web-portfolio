@@ -50,32 +50,6 @@
             "link": "View In Github"
         }
     ],
-    "testimonial": [
-        {
-            "id": "1",
-            "count": "5",
-            "src": "./img/avatar-image.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "author_name": "Dianne Russel",
-            "author_designation": "Starbucks"
-        },
-        {
-            "id": "2",
-            "count": "5",
-            "src": "./img/avatar-image-1.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "author_name": "Kristin Watson",
-            "author_designation": "Louis Vuitton"
-        },
-        {
-            "id": "3",
-            "count": "5",
-            "src": "./img/avatar-image-2.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "author_name": "Kathryn Murphy",
-            "author_designation": "McDonald's"
-        }
-    ],
     "techStacks": [
         {
             "id": "mongoDB",
@@ -96,6 +70,57 @@
             "id": "React",
             "name": "React",
             "icon": "./img/react.png"
+        },
+        {
+            "id": "Node",
+            "name": "Node",
+            "icon": "./img/nodejs.jpg"
+        },
+        {
+            "id": "Handlebars",
+            "name": "Handlebars",
+            "icon": "./img/handlebars.jpg"
+        },
+        {
+            "id": "C",
+            "name": "C",
+            "icon": "./img/c.png"
+        },
+        {
+            "id": "JavaScript",
+            "name": "JavaScript",
+            "icon": "./img/javascript.png"
+        }
+        ,
+        {
+            "id": "OBS",
+            "name": "OBS",
+            "icon": "./img/obs.png"
+        },
+        {
+            "id": "GitHub",
+            "name": "GitHub",
+            "icon": "./img/github.jpg"
+        },
+        {
+            "id": "HTML",
+            "name": "HTML",
+            "icon": "./img/html.jpg"
+        },
+        {
+            "id": "CSS",
+            "name": "CSS",
+            "icon": "./img/css.jpg"
+        },
+        {
+            "id": "Google Suite",
+            "name": "Google Suite",
+            "icon": "./img/gsuite.png"
+        },
+        {
+            "id": "Microsoft Office",
+            "name": "Microsoft Office",
+            "icon": "./img/msoffice.png"
         }
     ]
 }

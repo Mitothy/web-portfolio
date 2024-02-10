@@ -9,7 +9,7 @@ export default function HeroSection() {
                     </h1>
                     <p className="hero--section-description">
                         I am currently an Undergraduate Student at De La Salle University Manila, <br />
-                        taking up a Bachelor of Science Computer Science with a Major in <br /> Software Technology.
+                        taking up a Bachelor of Science in Computer Science with a Major in <br /> Software Technology.
                         I am a driven and committed person that wants to <br /> provide value to those around me.
                     </p>
                 </div>
