@@ -1,11 +1,11 @@
 import data from "../../data/index.json";
 
-export default function MySkills() {
+export default function Experiences() {
     return (
         <section className="skills--section" id="mySkills">
             <div className="portfolio--container">
-                <p clssName="section--title">My Skills</p>
-                <h2 className="skills-section--heading">My Expertise</h2>
+                <p clssName="section--title">About Me</p>
+                <h2 className="skills-section--heading">Experiences</h2>
             </div>
             <div className="skills--section--container">
                 {data?.skills?.map((item, index) => (
