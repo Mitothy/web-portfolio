@@ -157,6 +157,7 @@ h2 {
   margin: 0 auto;
   text-align: left;
   padding: 20px;  
+
 }
 
 /* Portfolio, Testimonial & Contact Me */
@@ -360,7 +361,7 @@ h2 {
   display: flex;
   padding: 112px 85px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
 }
 .portfolio--container-box {
@@ -368,19 +369,55 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 .portfolio--container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.3px;
+  position: relative;
+  width: 100%
 }
+
+.scroll-buttons {
+  position:absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.scroll-buttons button:hover {
+  background-color: #d9534f; /* Slightly darker shade of orange */
+}
+
+.scroll-buttons button {
+  background-color: #F0640C; /* Orange background */
+  color: #FFFFFF; /* White text */
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners for a modern look */
+  font-size: 20px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .portfolio--section--container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 42.6px;
   width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping to a new line */
+  gap: 20px; /* Adjust the space between cards */
+  padding: 20px 0; /* Gives some vertical space around the items */
+  scroll-behavior: smooth;
+  align-items:center;
 }
 .portfolio--section--img {
   border-radius: 8px;
@@ -390,17 +427,27 @@ h2 {
   width: 100%;
 }
 .portfolio--section--card {
-  display: flex;
+  display: inline-block; /* Treats each card as an inline block element */
+  width: 450px; /* Default width for larger screens */
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
+  flex: 0 0 auto;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  white-space: normal;
 }
+
+@media (max-width: 480px) {
+  .portfolio--section--card {
+    width: 90%; /* Adjusts width to be 90% of the screen width on smaller screens */
+    margin: 0 auto; /* Centers the card in the viewport */
+  }
+}
+
 .portfolio--section--card--content {
   display: flex;
   padding: 32px;
@@ -422,6 +469,20 @@ h2 {
 }
 .portfolio--section--card:hover path {
   stroke: #006b6a;
+}
+
+.portfolio--section--container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio--section--container::-webkit-scrollbar-thumb {
+  background: var(--primary); /* Or any color of your choice */
+  border-radius: 4px;
+}
+
+.portfolio--section--container::-webkit-scrollbar-track {
+  background: var(--light-gray); /* Or any color of your choice */
+  border-radius: 4px;
 }
 /* Portfolio Ends */
 

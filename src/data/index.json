@@ -44,7 +44,7 @@
         },
         {
             "id": "7",
-            "src": "./img/database.svg",
+            "src": "./img/event.svg",
             "title": "Team Head for Programs",
             "subtitle":"Camp Sawi 2023",
             "description": "Planned and executed a two-day off-campus event for La Salle Computer Society. In charge of ensuring participant management and oversight throughout the event, guaranteeing all attendees were present and accounted for. Achieved a successful event execution with a team of 10 in the programs committee."
@@ -69,6 +69,20 @@
         },
         {
             "id": "3",
+            "src": "./img/placeholder-image-2.png",
+            "title": "Easy Rentn",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "link": "View In Github"
+        },
+        {
+            "id": "4",
+            "src": "./img/placeholder-image-2.png",
+            "title": "Easy Rentn",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "link": "View In Github"
+        },
+        {
+            "id": "5",
             "src": "./img/placeholder-image-2.png",
             "title": "Easy Rentn",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
