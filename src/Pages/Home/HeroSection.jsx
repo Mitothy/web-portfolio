@@ -14,8 +14,8 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <br />
-                <a className="btn btn-primary" href="https://www.facebook.com/timothy.tan.3975012/" target="_blank" rel="noopener noreferrer">
-                    Get In Touch </a>
+                <a className="btn btn-primary" href="./Tan_CV.pdf" target="_blank" rel="noopener noreferrer">
+                    Download CV </a>
             </div>
             <div className="hero--section--img">
                 <img src="./img/profile-picture.png" alt="Hero Section" />

@@ -60,7 +60,7 @@
             "title": "Time Clock System",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "link": "View In Github",
-            "site": "https://github.com/"
+            "site": "https://github.com/Mitothy/CSSWENG"
         },
         {
             "id": "2",
@@ -68,7 +68,8 @@
             "images": ["./img/MyFarm/myfarm.png", "./img/MyFarm/rockdestroyed.png", "./img/MyFarm/withered.png"],
             "title": "MyFarm",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View In Github"
+            "link": "View In Github",
+            "site": "https://github.com/Mitothy/MyFarm"
         },
         {
             "id": "3",
@@ -76,7 +77,8 @@
             "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
             "title": "Juanderlust",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View In Github"
+            "link": "View In Github",
+            "site": "https://github.com/Mitothy/APPDEV"
         },
         {
             "id": "4",
@@ -84,7 +86,8 @@
             "images": ["./img/WebPortfolio/main.png", "./img/WebPortfolio/skills.png", "./img/WebPortfolio/aboutme.png", "./img/WebPortfolio/experiences.png", "./img/WebPortfolio/portfolio.png"],
             "title": "Web Portfolio",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View In Github"
+            "link": "View In Github",
+            "site": "https://github.com/Mitothy/web-portfolio"
         },
         {
             "id": "5",
@@ -92,7 +95,7 @@
             "images": ["./img/ADVDB/nifi.png", "./img/ADVDB/schema.png", "./img/ADVDB/excel.png", "./img/ADVDB/data.png"],
             "title": "Database Development",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "No Github Sorry :("
+            "link": "No Github :("
         }
     ],
     "techStacks": [

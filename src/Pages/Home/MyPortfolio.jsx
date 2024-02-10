@@ -50,7 +50,9 @@ export default function MyPortfolio() {
                         <div className="portfolio--section--card--content">
                             <h3 className="portfolio--section--title">{item.title}</h3>
                             <p className="text-md">{item.description}</p>
-                            <p className="text-sm portfolio--link">{item.link}</p>
+                            <a href={item.site} target="_blank" rel="noopener noreferrer" className="text-sm portfolio--link">
+                                {item.link}
+                            </a>
                         </div>
                     </div>
                 ))}
