@@ -56,6 +56,7 @@
         {
             "id": "1",
             "src": "./img/placeholder-image.png",
+            "images": ["./img/placeholder-image.png", "./img/placeholder-image-1.png"],
             "title": "Ahuse",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "link": "View In Github"

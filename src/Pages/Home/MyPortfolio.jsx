@@ -5,13 +5,13 @@ export default function MyPortfolio() {
     const [selectedImage, setSelectedImage] = useState(null);
     const scrollContainerRef = useRef(null);
 
-    const openImageModal = (src) => {
-        setSelectedImage(src);
+    const openImageModal = (images) => {
+        setSelectedImage(images); // Now, selectedImage is an array of image URLs
     };
-
     const closeImageModal = () => {
         setSelectedImage(null);
     };
+
 
     // Scroll function
     const scroll = (direction) => {
@@ -43,7 +43,7 @@ export default function MyPortfolio() {
                     <div key={index} className="portfolio--section--card">
                         <div
                             className="portfolio--section--img"
-                            onClick={() => openImageModal(item.src)}
+                            onClick={() => openImageModal(item.images)} // Pass the array of images
                         >
                             <img src={item.src} alt={item.title || "Placeholder"} style={{ cursor: 'pointer' }} />
                         </div>
@@ -61,31 +61,25 @@ export default function MyPortfolio() {
 }
 
 function ImageModal({ src, onClose }) {
-    if (!src) return null;
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % src.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + src.length) % src.length);
+    };
+
+    if (!src || src.length === 0) return null;
 
     return (
-        <div
-            style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                cursor: 'pointer',
-                zIndex: 1000, // Ensure the modal is above other content
-            }}
-            onClick={onClose}
-        >
-            <img src={src} alt="Zoomed" style={{
-                transform: 'scale(1.5)', // Adjust scale as needed
-                objectFit: 'contain',
-                maxWidth: '100%', // Ensure the image does not overflow the viewport
-                maxHeight: '100%',
-            }} />
+        <div className="image-modal-overlay" onClick={onClose}>
+            <div className="image-modal-nav" onClick={(e) => e.stopPropagation()}>
+                <button className="image-modal-button" onClick={prevImage}>&lt;</button>
+                <button className="image-modal-button" onClick={nextImage}>&gt;</button>
+            </div>
+            <img src={src[currentImageIndex]} alt="Zoomed In" className="image-modal-image" />
         </div>
     );
 }
