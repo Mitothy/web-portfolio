@@ -6,13 +6,13 @@ export default function AboutMe() {
             </div>
             <div className="hero--section--content--box--about--section--box">
                 <div className="hero--section-content">
-                    <p className="section--title">About</p>
+                    <p className="section--title">About Me</p>
                     <h1 className="skills--section--heading"></h1>
-                    <p className="hero--section--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum? </p>
+                    <p className="aboutme--section-description">Hello! My name is Timothy Joshua O. Tan currently a Computer Science Student in De La Salle University Manila in the Philippines.</p>
 
-                    <p className="hero--section--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum? </p>
+                    <p className="aboutme--section-description">Skilled at working in a team and giving my best to create quality outputs. Passionate about what I do and helping those around me</p>
 
-                    <p className="hero--section--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quas. Amet soluta assumenda cum? </p>
+                    <p className="aboutme--section-description">Looking to continue to push myself and grow as an individual and leader. Striving for Character and Excellence. </p>
                 </div>
             </div>
         </section>

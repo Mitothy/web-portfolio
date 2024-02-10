@@ -9,22 +9,45 @@
         },
         {
             "id": "2",
-            "src": "./img/tag-1.png",
+            "src": "./img/frontend-icon.svg",
             "title": "Front-End",
-            "subtitle": "Software Engineering Course",
+            "subtitle": "Application Development Course",
             "description": "Designed the frontend of a tourism booking application using HTML, CSS, and Handlebars. The application's backend was implemented with MongoDB and JavaScript."
         },
         {
             "id": "3",
-            "src": "./img/feather-pen-2.png",
-            "title": "UI & UX Design",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "./img/qa-icon.svg",
+            "title": "Quality Assurance Tester",
+            "subtitle": "Software Engineering Course",
+            "description": "Developed a remote time clock system for client's shift management, featuring account verification and one-time password (OTP) functionality. Integrated the system with a database using MongoDB, and a salary computation module."
         },
         {
             "id": "4",
-            "src": "./img/feather-pen-1.png",
-            "title": "Webflow Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "./img/database.svg",
+            "title": "Database Studies",
+            "subtitle":"Advanced Database Course",
+            "description": "Constructed a data warehouse combining different data sources, including MySQL and MongoDB, utilizing Apache Nifi. Generated database analysis on the data warehouse using SQL and Excel"
+        },
+        {
+            "id": "5",
+            "src": "./img/project-management-icon.svg",
+            "title": "Project Management Chairperson",
+            "subtitle":"Computer Batch 2T25",
+            "description": "Oversaw project management activities including documentation, planning, and monitoring of all events. Directed committee operations, ensuring regular progress meetings and effective task delegation"
+        },
+        {
+            "id": "6",
+            "src": "./img/oplog.svg",
+            "title": "Team Head for Operations and Logistics",
+            "subtitle":"ENGLICOM CNY 2023",
+            "description": "Managed logistics and documentation for a five-day flagship event. Coordinated with speakers, performers, food suppliers, and university offices to ensure seamless event execution. Led to a successful event with 1,060 participants."
+        },
+        {
+            "id": "7",
+            "src": "./img/database.svg",
+            "title": "Team Head for Programs",
+            "subtitle":"Camp Sawi 2023",
+            "description": "Planned and executed a two-day off-campus event for La Salle Computer Society. In charge of ensuring participant management and oversight throughout the event, guaranteeing all attendees were present and accounted for. Achieved a successful event execution with a team of 10 in the programs committee."
         }
         
         
