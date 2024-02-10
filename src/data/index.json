@@ -1,16 +1,18 @@
 {
-    "skills": [
+    "experiences": [
         {
             "id": "1",
-            "src": "./img/product-chain-1.png",
-            "title": "Front-End",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "./img/money-icon.svg",
+            "title": "Vice President for Finance",
+            "subtitle": "ENGLICOM",
+            "description": "As the Vice President for Finance I lead a team of 27 officers, in Term 1 we were able to achieve a Top 3 Finance ranking among DLSU Organizations. Managed a depository fund exceeding P1,000,000.00"
         },
         {
             "id": "2",
             "src": "./img/tag-1.png",
-            "title": "Back-End",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "title": "Front-End",
+            "subtitle": "Software Engineering Course",
+            "description": "Designed the frontend of a tourism booking application using HTML, CSS, and Handlebars. The application's backend was implemented with MongoDB and JavaScript."
         },
         {
             "id": "3",
