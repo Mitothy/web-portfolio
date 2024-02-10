@@ -1,10 +1,12 @@
 /* Global CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: "Ubuntu", sans-serif;
+  -moz-osx-font-smoothing: "Ubuntu", sans-serif;
   font-style: normal;
 }
 h1,
@@ -17,16 +19,16 @@ p {
   margin: 0;
 }
 :root {
-  --primary: #5e3bee;
+  --primary: #F0640C;
   --heading-color: #282938;
-  --bg-shade: #f5fcff;
+  --bg-shade: #f5fcff;  
   --github: #e62872;
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
 }
 .btn {
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   display: inline-block;
   padding: 14px 32px;
   font-size: 16px;
@@ -469,7 +471,7 @@ h2 {
 }
 .contact--input {
   display: flex;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   padding: 16px;
   align-items: center;
   align-self: stretch;
@@ -763,7 +765,7 @@ input[type="checkbox"] {
   color: white;
   background-color: black;
   padding: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .experience-section h1,
@@ -834,7 +836,7 @@ input[type="checkbox"] {
 
 .section--title {
   align-self: left;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .tech-stack-title-container {
@@ -864,4 +866,20 @@ input[type="checkbox"] {
 .tech-stack-icon:hover img {
   filter: none; /* Restores original icon color on hover */
   transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+
+.image-frame {
+  padding: 10px; /* Adjust the padding to control the frame size */
+  background-color: #fff; /* Frame color */
+  border: 5px solid #ddd; /* Frame border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+  display: inline-block; /* Keeps the frame tight around the image */
+  margin: 20px; /* Adds some space around the frame */
+}
+
+.image-frame img {
+  display: block; /* Removes bottom space/margin under the image */
+  width: 100%; /* Makes the image fully occupy the frame */
+  height: auto; /* Keeps the image aspect ratio */
 }

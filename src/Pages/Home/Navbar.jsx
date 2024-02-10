@@ -15,7 +15,7 @@ function Navbar() {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 500) {
-                closeMenu;
+                closeMenu();
             }
         };
 
@@ -28,14 +28,14 @@ function Navbar() {
 
     useEffect(() => {
         if (window.innerWidth <= 1200) {
-            closeMenu;
+            closeMenu();
         }
     }, []);
 
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                <img src="./img/logo.svg" alt="Logoipsum" />
+                <img src="./img/logo.png" alt="Logoipsum" />
             </div>
             <a
                 className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -89,34 +89,20 @@ function Navbar() {
                             About Me
                         </Link>
                     </li>
+                    {/* Changed part */}
                     <li>
-                        <Link
+                        <a
+                            href="https://www.facebook.com/timothy.tan.3975012/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={closeMenu}
-                            activeClass="navbar--active-content"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            to="testimonial"
                             className="navbar--content"
                         >
-                            Testimonials
-                        </Link>
+                            Contact Me
+                        </a>
                     </li>
                 </ul>
             </div>
-            <Link
-                onClick={closeMenu}
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="btn btn-outline-primary"
-            >
-                Contact Me
-            </Link>
         </nav>
     );
 }

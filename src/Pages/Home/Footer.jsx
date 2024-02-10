@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer--container">
             <div className="footer--link--container">
                 <div>
-                    <img src="./img/logo.svg" alt="Logoipsum" />
+                    <img src="./img/logo-shade.png" alt="Logoipsum" />
                 </div>
                 <div className="footer--items">
                     <ul>
@@ -48,40 +48,14 @@ function Footer() {
                             >
                                 About Me
                             </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="navbar--active-content"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                to="Contact"
-                                className="text-md"
-                            >
-                                Contact
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="navbar--active-content"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                to="testimonial"
-                                className="text-md"
-                            >
-                                Testimonials
-                            </Link>
-                        </li>
+                        </li>   
                     </ul>
                 </div>
                 <div className="footer--social--icon">
                     <ul>
                         <li>
                             <a
-                                href="https://www.facebook.com/"
+                                href="https://www.facebook.com/timothy.tan.3975012/"
                                 className="navbar--content"
                                 target="_blank"
                                 rel="noreferrer"
@@ -102,7 +76,7 @@ function Footer() {
                         </li>
                         <li>
                             <a
-                                href="https://www.instagram.com/"
+                                href="https://www.instagram.com/timothyjoshua_tan/"
                                 className="navbar--content"
                                 target="_blank"
                                 rel="noreferrer"
@@ -125,7 +99,7 @@ function Footer() {
                         </li>
                         <li>
                             <a
-                                href="https://www.twitter.com/"
+                                href="https://twitter.com/MITOTHY2"
                                 className="navbar--content"
                                 target="_blank"
                                 rel="noreferrer"
@@ -146,7 +120,7 @@ function Footer() {
                         </li>
                         <li>
                             <a
-                                href="https://www.linkedin.com/"
+                                href="https://www.linkedin.com/in/timothy-tan-06bb9a192/"
                                 className="navbar--content"
                                 target="_blank"
                                 rel="noreferrer"

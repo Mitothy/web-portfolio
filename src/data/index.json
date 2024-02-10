@@ -91,6 +91,11 @@
             "id": "Python",
             "name": "Python",
             "icon": "./img/python.png"
+        },
+        {
+            "id": "React",
+            "name": "React",
+            "icon": "./img/react.png"
         }
     ]
 }

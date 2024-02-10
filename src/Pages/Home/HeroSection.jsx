@@ -3,21 +3,22 @@ export default function HeroSection() {
         <section id="heroSection" className="hero--section">
             <div className="hero--section--content--box">
                 <div className="hero--section--content">
-                    <p className="section--title">Hey, I'm John</p>
+                    <p className="section--title">Hey, I'm Timothy Joshua Tan</p>
                     <h1 className="hero--section--title">
-                        <span className="hero--section-title--color">Full Stack</span>{" "}
-                        <br />
-                        Developer
+                        <span className="hero--section-title--color">Full Stack Developer</span>{" "}
                     </h1>
                     <p className="hero--section-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        <br /> Dolorum, quas. Amet soluta assumenda cum?
+                        I am currently an Undergraduate Student at De La Salle University Manila, <br />
+                        taking up a Bachelor of Science Computer Science with a Major in <br /> Software Technology.
+                        I am a driven and committed person that wants to <br /> provide value to those around me.
                     </p>
                 </div>
-                <button className="btn btn-primary">Get In Touch</button>
+                <br />
+                <a className="btn btn-primary" href="https://www.facebook.com/timothy.tan.3975012/" target="_blank" rel="noopener noreferrer">
+                    Get In Touch </a>
             </div>
             <div className="hero--section--img">
-                <img src="./img/hero_img.png" alt="Hero Section" />
+                <img src="./img/profile-picture.png" alt="Hero Section" />
             </div>
         </section>
     );
