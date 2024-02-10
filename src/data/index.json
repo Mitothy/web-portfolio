@@ -55,39 +55,44 @@
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/placeholder-image.png",
-            "images": ["./img/placeholder-image.png", "./img/placeholder-image-1.png"],
-            "title": "Ahuse",
+            "src": "./img/CSSWENG/login.png",
+            "images": ["./img/CSSWENG/login.png", "./img/CSSWENG/timedin.png", "./img/CSSWENG/employeesview.png", "./img/CSSWENG/settings.png", "./img/CSSWENG/breakdown.png"],
+            "title": "Time Clock System",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View In Github"
+            "link": "View In Github",
+            "site": "https://github.com/"
         },
         {
             "id": "2",
-            "src": "./img/placeholder-image-1.png",
-            "title": "App Dashboard",
+            "src": "./img/MyFarm/myfarm.png",
+            "images": ["./img/MyFarm/myfarm.png", "./img/MyFarm/rockdestroyed.png", "./img/MyFarm/withered.png"],
+            "title": "MyFarm",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "link": "View In Github"
         },
         {
             "id": "3",
-            "src": "./img/placeholder-image-2.png",
-            "title": "Easy Rentn",
+            "src": "./img/Juanderlust/main.png",
+            "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
+            "title": "Juanderlust",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "link": "View In Github"
         },
         {
             "id": "4",
-            "src": "./img/placeholder-image-2.png",
-            "title": "Easy Rentn",
+            "src": "./img/WebPortfolio/main.png",
+            "images": ["./img/WebPortfolio/main.png", "./img/WebPortfolio/skills.png", "./img/WebPortfolio/aboutme.png", "./img/WebPortfolio/experiences.png", "./img/WebPortfolio/portfolio.png"],
+            "title": "Web Portfolio",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
             "link": "View In Github"
         },
         {
             "id": "5",
-            "src": "./img/placeholder-image-2.png",
-            "title": "Easy Rentn",
+            "src": "./img/ADVDB/nifi.png",
+            "images": ["./img/ADVDB/nifi.png", "./img/ADVDB/schema.png", "./img/ADVDB/excel.png", "./img/ADVDB/data.png"],
+            "title": "Database Development",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-            "link": "View In Github"
+            "link": "No Github Sorry :("
         }
     ],
     "techStacks": [
