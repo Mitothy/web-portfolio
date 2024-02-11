@@ -1066,3 +1066,109 @@ input[type="checkbox"] {
   border-top-right-radius: 12px;
 }
 
+@media only screen and (max-width: 480px) {
+  h1, .hero--section--title, .skills--section--heading, .sections--heading {
+    font-size: 24px; /* Smaller font size for main headings */
+  }
+
+  .navbar, .footer--container, .skills--section, .testimonial--section, .contact--section {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .btn, .image-modal-button {
+    padding: 10px 20px; /* Smaller buttons */
+    font-size: 14px; /* Smaller text on buttons */
+  }
+
+  .text-lg, .text-md, .text-sm {
+    font-size: 14px; /* Adjust base text size */
+  }
+
+  .skills--section--container, .about--section, .portfolio--section--container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .navbar--items ul {
+    flex-direction: column; /* Stack navbar items vertically */
+  }
+
+  .portfolio--section--img > img, .about--section--img > img {
+    height: auto; /* Adjust image height automatically */
+  }
+
+  .portfolio--section--card, .experience-card {
+    padding: 20px; /* Reduce card padding */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body, p, .navbar--content, .footer--content {
+    font-size: 14px; /* Standardize smaller font size for body text and similar */
+  }
+
+  h1, .hero--section--title, .skills--section--heading, .sections--heading {
+    font-size: 22px; /* Smaller font size for major headings */
+  }
+
+  h2, .skills--section--title, .about--section--title {
+    font-size: 20px; /* Adjust secondary headings */
+  }
+
+  h3, .testimonial--author--name, .experience-card h3 {
+    font-size: 18px; /* Smaller font size for tertiary headings */
+  }
+
+  .section--title, .sub--title, .portfolio--section--title, .testimonial--author--designation {
+    font-size: 16px; /* Smaller font size for section titles and similar elements */
+  }
+
+  .text-lg {
+    font-size: 16px; /* Adjust large text */
+  }
+
+  .text-md {
+    font-size: 14px; /* Adjust medium text */
+  }
+
+  .text-sm, .navbar--items ul li a, .footer--items ul li a {
+    font-size: 12px; /* Adjust small text and navigation/footer links */
+  }
+
+  .btn, .image-modal-button {
+    font-size: 14px; /* Adjust button text size */
+  }
+
+  .contact--label, .contact--input, select, .checkbox--label {
+    font-size: 14px; /* Adjust form elements for readability */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .scroll-buttons {
+    position: static; /* Reset positioning to flow in the document */
+    display: block; /* Stack buttons vertically or keep them inline but below the text */
+    text-align: center; /* Center-align the buttons if they're inline */
+    padding: 8px 12px; /* Slightly smaller padding */
+    font-size: 16px; /* Slightly smaller font size */
+    margin: 0 5px; 
+  }
+
+  .portfolio--container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the content */
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .scroll-buttons button {
+    padding: 6px 10px; /* Even smaller padding for very small devices */
+    font-size: 14px; /* Even smaller font size for readability */
+    margin: 0 4px; /* Adjust margin for tighter spaces */
+  }
+  .portfolio--container {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align the content */
+    }
+  }
