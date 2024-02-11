@@ -12,7 +12,7 @@ export default function AboutMe() {
 
                     <p className="aboutme--section-description">Skilled at working in a team and giving my best to create quality outputs. Passionate about what I do and helping those around me</p>
 
-                    <p className="aboutme--section-description">Looking to continue to push myself and grow as an individual and leader. Striving for Character and Excellence. </p>
+                    <p className="aboutme--section-description">Looking to continue to push myself to grow as an individual and leader. Striving for Character and Excellence. </p>
                 </div>
             </div>
         </section>

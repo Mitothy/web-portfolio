@@ -340,6 +340,36 @@ h2 {
   font-weight: 400;
   line-height: 32px;
 }
+
+@media (max-width: 1024px) {
+  .skills--section--container {
+    grid-template-columns: repeat(3, 1fr); /* Adjust columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills--section--container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust columns for smaller tablets */
+  }
+  .skills--section--title, .skills--section--subtitle {
+    font-size: 28px; /* Adjust font size for better fit */
+    line-height: normal; /* Adjust line height if necessary */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills--section--container {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+  .skills--section--title, .skills--section--subtitle {
+    font-size: 24px; /* Further reduce font size for mobile */
+  }
+  .skills--section--card {
+    padding: 16px; /* Adjust padding for smaller screens */
+    gap: 16px; /* Adjust gap for a tighter layout */
+  }
+}
+
 /* Skills Style Ends */
 
 /* About Us */
