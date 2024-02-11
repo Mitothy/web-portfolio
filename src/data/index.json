@@ -58,7 +58,7 @@
             "src": "./img/CSSWENG/login.png",
             "images": ["./img/CSSWENG/login.png", "./img/CSSWENG/timedin.png", "./img/CSSWENG/employeesview.png", "./img/CSSWENG/settings.png", "./img/CSSWENG/breakdown.png"],
             "title": "Time Clock System",
-            "description": "This was my 2nd full stack experience ",
+            "description": "This was my 2nd full stack development experience. This one taught me more about the systematic side of software developmeent for this project we applied SCRUM meetings and communicated with a client for what they neeed out of our app.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/CSSWENG"
         },
@@ -76,7 +76,7 @@
             "src": "./img/Juanderlust/main.png",
             "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
             "title": "Juanderlust",
-            "description": "This was my first forray into application development. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
+            "description": "My first forray into full stack application developmnt. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/APPDEV"
         },
@@ -85,7 +85,7 @@
             "src": "./img/WebPortfolio/main.png",
             "images": ["./img/WebPortfolio/main.png", "./img/WebPortfolio/skills.png", "./img/WebPortfolio/aboutme.png", "./img/WebPortfolio/experiences.png", "./img/WebPortfolio/portfolio.png"],
             "title": "Web Portfolio",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "description": "This web portfolio is a personal project of mine since I wanted to apply the things I've been learning so far to my life. I thought this would be a good way to measure my capabilities and also find something productive to do with my time.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/web-portfolio"
         },
@@ -94,7 +94,7 @@
             "src": "./img/ADVDB/nifi.png",
             "images": ["./img/ADVDB/nifi.png", "./img/ADVDB/schema.png", "./img/ADVDB/excel.png", "./img/ADVDB/data.png"],
             "title": "Database Development",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "description": "This is the starting point of one of my courses for school where we will be tackling advanced databases. The class has been very interesting to me and I am eager to learn more about these topics. So far we have covered ETL Tools and OLAP Functions.",
             "link": "No Github :("
         }
     ],
