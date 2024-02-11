@@ -58,7 +58,7 @@
             "src": "./img/CSSWENG/login.png",
             "images": ["./img/CSSWENG/login.png", "./img/CSSWENG/timedin.png", "./img/CSSWENG/employeesview.png", "./img/CSSWENG/settings.png", "./img/CSSWENG/breakdown.png"],
             "title": "Time Clock System",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "description": "This was my 2nd full stack experience ",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/CSSWENG"
         },
@@ -67,7 +67,7 @@
             "src": "./img/MyFarm/myfarm.png",
             "images": ["./img/MyFarm/myfarm.png", "./img/MyFarm/rockdestroyed.png", "./img/MyFarm/withered.png"],
             "title": "MyFarm",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "description": "This was one of the first few machine projects that I had to make for school. It was a very challenging project since this was my first time working with Java and GUI but I took I had a lot of fun with it and am proud of the result.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/MyFarm"
         },
@@ -76,7 +76,7 @@
             "src": "./img/Juanderlust/main.png",
             "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
             "title": "Juanderlust",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+            "description": "This was my first forray into application development. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/APPDEV"
         },
