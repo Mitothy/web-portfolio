@@ -11,21 +11,21 @@
             "id": "2",
             "src": "./img/frontend-icon.svg",
             "title": "Front-End",
-            "subtitle": "Application Development Course",
+            "subtitle": "Application Development",
             "description": "Designed the frontend of a tourism booking application using HTML, CSS, and Handlebars. The application's backend was implemented with MongoDB and JavaScript."
         },
         {
             "id": "3",
             "src": "./img/qa-icon.svg",
             "title": "Quality Assurance Tester",
-            "subtitle": "Software Engineering Course",
+            "subtitle": "Software Engineering",
             "description": "Developed a remote time clock system for client's shift management, featuring account verification and one-time password (OTP) functionality. Integrated the system with a database using MongoDB, and a salary computation module."
         },
         {
             "id": "4",
             "src": "./img/database.svg",
             "title": "Database Studies",
-            "subtitle":"Advanced Database Course",
+            "subtitle":"Advanced Databases",
             "description": "Constructed a data warehouse combining different data sources, including MySQL and MongoDB, utilizing Apache Nifi. Generated database analysis on the data warehouse using SQL and Excel"
         },
         {
