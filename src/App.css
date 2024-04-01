@@ -329,7 +329,7 @@ h2 {
 
 .skills--section--subtitle {
   color: var(--heading-color);
-  font-size: 25px;
+  font-size: 1.2vw;
   font-weight: 500;
   line-height: 0px;
 }

@@ -5,7 +5,7 @@
             "src": "./img/money-icon.svg",
             "title": "Vice President for Finance",
             "subtitle": "ENGLICOM",
-            "description": "As the Vice President for Finance I lead a team of 27 officers, in Term 1 we were able to achieve a Top 3 Finance ranking among DLSU Organizations. Managed a depository fund exceeding P1,000,000.00"
+            "description": "As the Vice President for Finance I lead a team of 27 officers, in Term 1 we were able to achieve a Top 3 Finance ranking among DLSU Organizations. Managed a depository fund exceeding P1,500,000.00"
         },
         {
             "id": "2",
@@ -58,7 +58,7 @@
             "src": "./img/CSSWENG/login.png",
             "images": ["./img/CSSWENG/login.png", "./img/CSSWENG/timedin.png", "./img/CSSWENG/employeesview.png", "./img/CSSWENG/settings.png", "./img/CSSWENG/breakdown.png"],
             "title": "Time Clock System",
-            "description": "This was my 2nd full stack development experience. This one taught me more about the systematic side of software developmeent for this project we applied SCRUM meetings and communicated with a client for what they neeed out of our app.",
+            "description": "This was my 2nd full stack development experience. This one taught me more about the systematic side of software development for this project we applied SCRUM meetings and communicated with a client for what they need out of our app.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/CSSWENG"
         },
@@ -67,7 +67,7 @@
             "src": "./img/MyFarm/myfarm.png",
             "images": ["./img/MyFarm/myfarm.png", "./img/MyFarm/rockdestroyed.png", "./img/MyFarm/withered.png"],
             "title": "MyFarm",
-            "description": "This was one of the first few machine projects that I had to make for school. It was a very challenging project since this was my first time working with Java and GUI but I took I had a lot of fun with it and am proud of the result.",
+            "description": "This was one of the first few machine projects that I had to make for school. It was a very challenging project since this was my first time working with Java and GUI but I thoroughly enjoyed the experience and am proud of the result.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/MyFarm"
         },
@@ -76,7 +76,7 @@
             "src": "./img/Juanderlust/main.png",
             "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
             "title": "Juanderlust",
-            "description": "My first forray into full stack application developmnt. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
+            "description": "My first forray into full stack application development. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/APPDEV"
         },
