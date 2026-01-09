@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import data from "../../data/index.json";
 
-export default function Experiences() {
+function Experiences() {
     return (
         <section className="skills--section" id="mySkills">
             <div className="portfolio--container">
@@ -17,7 +18,7 @@ export default function Experiences() {
                             <p className="skills--section--description">{item.description}</p>
                         </div>
                         <div className="skills-section--img">
-                            <img src={item.src} alt="Product Chain"></img>
+                            <img src={item.src} alt="Product Chain" loading="lazy" />
                         </div>
                     </div>
                 ))}
@@ -25,3 +26,5 @@ export default function Experiences() {
         </section>
     );
 }
+
+export default memo(Experiences);

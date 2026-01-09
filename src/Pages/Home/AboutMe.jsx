@@ -1,8 +1,10 @@
-export default function AboutMe() {
+import { memo } from 'react';
+
+function AboutMe() {
     return (
         <section id="AboutMe" className="about--section">
             <div className="about--section--img">
-                <img src="./img/formal-picture.jpg" alt="About Me" />
+                <img src="./img/formal-picture.jpg" alt="About Me" loading="lazy" />
             </div>
             <div className="hero--section--content--box--about--section--box">
                 <div className="hero--section-content">
@@ -16,5 +18,7 @@ export default function AboutMe() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
+
+export default memo(AboutMe);

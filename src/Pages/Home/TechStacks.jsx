@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import data from "../../data/index.json";
 
-export default function TechStack() {
+function TechStack() {
     return (
         <div className="tech-stack-section">
             <div className="tech-stack-title-container">
@@ -9,10 +10,12 @@ export default function TechStack() {
             <div className="tech-stack-icons-container">
                 {data.techStacks.map((stack, index) => (
                     <div key={index} className="tech-stack-icon" title={stack.name}>
-                        <img src={stack.icon} alt={stack.name} />
+                        <img src={stack.icon} alt={stack.name} loading="lazy" />
                     </div>
                 ))}
             </div>
         </div>
     );
-};
+}
+
+export default memo(TechStack);

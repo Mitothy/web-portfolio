@@ -4,16 +4,27 @@ import AboutMe from "../AboutMe";
 import MyPortfolio from "../MyPortfolio";
 import Footer from "../Footer";
 import TechStack from "../TechStacks";
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation";
 
 
 export default function Home() {
+    useScrollAnimation();
+
     return (
         <>
             <HeroSection />
-            <MyPortfolio />
-            <Experiences />
-            <AboutMe />
-            <TechStack />
+            <div className="fade-in-section">
+                <MyPortfolio />
+            </div>
+            <div className="fade-in-section">
+                <Experiences />
+            </div>
+            <div className="fade-in-section">
+                <AboutMe />
+            </div>
+            <div className="fade-in-section">
+                <TechStack />
+            </div>
             <Footer />
         </>
     )
