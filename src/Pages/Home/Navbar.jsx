@@ -5,7 +5,7 @@ function Navbar() {
     const [navActive, setNavActive] = useState(false);
     const [darkMode, setDarkMode] = useState(() => {
         const saved = localStorage.getItem('darkMode');
-        return saved === 'true' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        return saved !== null ? saved === 'true' : true;
     });
 
     const toggleNav = () => {
@@ -53,7 +53,14 @@ function Navbar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`} role="navigation" aria-label="Main navigation">
             <div>
-                <img src="./img/logo.png" alt="Logoipsum" />
+                <a
+                    href="https://github.com/Mitothy?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="navbar--logo-text"
+                >
+                    @timothyjoshua_tan
+                </a>
             </div>
             <button
                 className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -112,7 +119,7 @@ function Navbar() {
                     {/* Changed part */}
                     <li>
                         <a
-                            href="https://www.facebook.com/timothy.tan.3975012/"
+                            href="https://www.instagram.com/timothyjoshua_tan/"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={closeMenu}
@@ -121,15 +128,18 @@ function Navbar() {
                             Contact Me
                         </a>
                     </li>
+                    <li className="theme-toggle-container">
+                        <button
+                            className="navbar--theme-toggle"
+                            onClick={toggleDarkMode}
+                            aria-label="Toggle dark mode"
+                        >
+                            <span className={`toggle-option ${!darkMode ? 'active' : ''}`}>L</span>
+                            <span className={`toggle-option ${darkMode ? 'active' : ''}`}>D</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
-            <button
-                className="dark-mode-toggle"
-                onClick={toggleDarkMode}
-                aria-label="Toggle dark mode"
-            >
-                {darkMode ? '☀️' : '🌙'}
-            </button>
         </nav>
     );
 }
