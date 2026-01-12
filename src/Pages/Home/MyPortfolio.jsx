@@ -2,15 +2,15 @@ import React, { useState, useRef, memo } from 'react';
 import data from "../../data/index.json";
 
 export default function MyPortfolio() {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedProject, setSelectedProject] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
     const scrollContainerRef = useRef(null);
 
-    const openImageModal = (images) => {
-        setSelectedImage(images); // Now, selectedImage is an array of image URLs
+    const openImageModal = (project) => {
+        setSelectedProject(project); // Pass the entire project object
     };
     const closeImageModal = () => {
-        setSelectedImage(null);
+        setSelectedProject(null);
     };
 
 
@@ -63,7 +63,7 @@ export default function MyPortfolio() {
                     <div key={index} className="portfolio--section--card">
                         <div
                             className="portfolio--section--img"
-                            onClick={() => openImageModal(item.images)} // Pass the array of images
+                            onClick={() => openImageModal(item)} // Pass the entire project object
                         >
                             <img src={item.src} alt={item.title || "Placeholder"} loading="lazy" />
                         </div>
@@ -88,31 +88,38 @@ export default function MyPortfolio() {
                     />
                 ))}
             </div>
-            {selectedImage && <ImageModal src={selectedImage} onClose={closeImageModal} />}
+            {selectedProject && <ImageModal project={selectedProject} onClose={closeImageModal} />}
         </section>
     );
 }
 
-const ImageModal = memo(function ImageModal({ src, onClose }) {
+const ImageModal = memo(function ImageModal({ project, onClose }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const nextImage = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % src.length);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
     };
 
     const prevImage = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + src.length) % src.length);
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + project.images.length) % project.images.length);
     };
 
-    if (!src || src.length === 0) return null;
+    if (!project || !project.images || project.images.length === 0) return null;
 
     return (
         <div className="image-modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Image gallery modal">
-            <div className="image-modal-nav" onClick={(e) => e.stopPropagation()}>
-                <button className="image-modal-button" onClick={prevImage} aria-label="Previous image">&lt;</button>
-                <button className="image-modal-button" onClick={nextImage} aria-label="Next image">&gt;</button>
+            <button className="image-modal-close" onClick={onClose} aria-label="Close modal">&times;</button>
+            <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+                <button className="image-modal-button image-modal-button-left" onClick={prevImage} aria-label="Previous image">&lt;</button>
+                <div className="image-modal-center">
+                    <img src={project.images[currentImageIndex]} alt={`${project.title} - Image ${currentImageIndex + 1}`} className="image-modal-image" loading="lazy" />
+                    <div className="image-modal-description">
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
+                    </div>
+                </div>
+                <button className="image-modal-button image-modal-button-right" onClick={nextImage} aria-label="Next image">&gt;</button>
             </div>
-            <img src={src[currentImageIndex]} alt="Zoomed In" className="image-modal-image" loading="lazy" />
         </div>
     );
 });

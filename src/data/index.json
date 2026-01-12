@@ -76,7 +76,7 @@
             "src": "./img/Juanderlust/main.png",
             "images": ["./img/Juanderlust/main.png", "./img/Juanderlust/map.png", "./img/Juanderlust/sample.png", "./img/Juanderlust/reviews.png", "./img/Juanderlust/search.png"],
             "title": "Juanderlust",
-            "description": "My first forray into full stack application development. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project since we had to build it completely from scratch but it was a great and fun experience.",
+            "description": "My first forray into full stack application development. The website was built with JavaScript, HTML, CSS, and Handlebars, it was also quite a challenging project and I learned a lot because we had to build it from complete scratch.",
             "link": "View In Github",
             "site": "https://github.com/Mitothy/APPDEV"
         },
@@ -122,12 +122,12 @@
         {
             "id": "Node",
             "name": "Node",
-            "icon": "./img/nodejs.jpg"
+            "icon": "./img/nodejs.png"
         },
         {
             "id": "Handlebars",
             "name": "Handlebars",
-            "icon": "./img/handlebars.jpg"
+            "icon": "./img/handlebars.png"
         },
         {
             "id": "C",
@@ -148,17 +148,17 @@
         {
             "id": "GitHub",
             "name": "GitHub",
-            "icon": "./img/github.jpg"
+            "icon": "./img/github.png"
         },
         {
             "id": "HTML",
             "name": "HTML",
-            "icon": "./img/html.jpg"
+            "icon": "./img/html.png"
         },
         {
             "id": "CSS",
             "name": "CSS",
-            "icon": "./img/css.jpg"
+            "icon": "./img/css.png"
         },
         {
             "id": "Google Suite",

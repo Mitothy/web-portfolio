@@ -1305,43 +1305,91 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   height: auto; /* Keeps the image aspect ratio */
 }
 
-/* Styles for the ImageModal navigation buttons */
+/* Styles for the ImageModal */
+.image-modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 90%;
+  max-height: 90vh;
+  position: relative;
+}
+
+.image-modal-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  max-width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
 .image-modal-button {
   cursor: pointer;
   background-color: var(--primary);
   border: none;
   color: white;
-  padding: 10px 15px;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-size: 24px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
 }
 
 .image-modal-button:hover {
-  background-color: white; /* Darker shade of orange for hover effect */
-  color: var(--primary)
+  background-color: white;
+  color: var(--primary);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.6);
+}
+
+.image-modal-button-left {
+  align-self: center;
+}
+
+.image-modal-button-right {
+  align-self: center;
 }
 
 .image-modal-image {
-  max-width: 70%; /* Limits the image width to 80% of the modal's width */
-  max-height: 70vh; /* Limits the image height to 80% of the viewport height */
-  object-fit: contain; /* Ensures the whole image is visible, may add space around the image */
-  display: block; /* Ensures the image is a block-level element, centering it if necessary */
-  margin: auto; /* Centers the image horizontally and vertically */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-/* Ensures the navigation buttons are not too close to the edge of the screen */
-.image-modal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px; /* Adjust padding as needed */
+.image-modal-description {
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 20px;
+  max-width: 700px;
+}
+
+.image-modal-description h3 {
+  color: var(--heading-color);
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.image-modal-description p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* Adjusts the modal overlay style */
@@ -1362,6 +1410,35 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   animation: fadeIn 0.3s ease;
 }
 
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--primary);
+  border: none;
+  color: white;
+  font-size: 36px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+  line-height: 1;
+  padding: 0;
+}
+
+.image-modal-close:hover {
+  background: white;
+  color: var(--primary);
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.6);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1371,10 +1448,18 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   }
 }
 
+.portfolio--section--img {
+  width: 100%;
+  height: 300px; /* Fixed height for consistency */
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
 .portfolio--section--img > img {
   width: 100%; /* Ensures the image takes the full width of its container */
-  height: 300px; /* Adjusts the height automatically to maintain the aspect ratio */
-  object-fit: cover; /* Covers the area of the container without stretching. Use 'contain' if you want to see the whole image without cropping */
+  height: 100%; /* Takes full height of parent container */
+  object-fit: cover; /* Covers the area of the container without stretching */
   border-top-left-radius: 12px; /* Matches the container's border-radius for the top corners */
   border-top-right-radius: 12px;
 }
@@ -1411,6 +1496,37 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
 
   .portfolio--section--card, .experience-card {
     padding: 20px; /* Reduce card padding */
+  }
+
+  .image-modal-content {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 95%;
+  }
+
+  .image-modal-center {
+    padding: 15px;
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .image-modal-image {
+    height: 250px;
+  }
+
+  .image-modal-button {
+    padding: 10px 15px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .image-modal-description h3 {
+    font-size: 20px;
+  }
+
+  .image-modal-description p {
+    font-size: 14px;
   }
 }
 
