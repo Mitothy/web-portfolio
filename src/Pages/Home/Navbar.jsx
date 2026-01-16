@@ -119,7 +119,7 @@ function Navbar() {
                     {/* Changed part */}
                     <li>
                         <a
-                            href="https://www.instagram.com/timothyjoshua_tan/"
+                            href="https://www.facebook.com/timothy.tan.3975012/"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={closeMenu}

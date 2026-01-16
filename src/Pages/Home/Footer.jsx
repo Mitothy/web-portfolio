@@ -153,6 +153,9 @@ function Footer() {
                             </a>
                         </li>
                     </ul>
+                    <p className="footer-email">
+                        timothyjoshuatan@gmail.com
+                    </p>
                 </div>
             </div>
         </footer>

@@ -537,17 +537,45 @@ body.dark-mode .toggle-option {
 
 /* Skills Style Ends */
 
-/* About Us */
-.about--section {
-  display: grid;
-  padding: 133.3px 85.3px;
-  align-items: center;
-  gap: 114.6px;
-  grid-template-columns: repeat(2, 1fr);
+/* About Us & Skills Side by Side */
+.about-skills-row {
+  display: flex;
+  gap: 40px;
+  padding: 80px 85px;
+  align-items: stretch;
 }
+
+.about--section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  gap: 30px;
+  background: var(--card-bg);
+  border-radius: 12px;
+}
+
+.about--section--img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
 .about--section--img > img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.hero--section--content--box--about--section--box {
+  text-align: center;
+}
+
+.aboutme--section-description {
+  margin-bottom: 10px;
 }
 /* About Us Ends */
 
@@ -849,7 +877,7 @@ input[type="checkbox"] {
 /* Footer Start */
 .footer--container {
   display: flex;
-  padding: 106.667px 85.333px;
+  padding: 40px 85.333px;
   flex-direction: column;
   align-items: flex-start;
   background: var(--bg-shade);
@@ -909,10 +937,16 @@ body.dark-mode .footer--logo-link:hover svg path {
 .footer--items ul > li > a {
   text-decoration: none;
 }
+.footer--social--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .footer--social--icon > ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   gap: 16px;
   flex-shrink: 0;
@@ -961,6 +995,59 @@ body.dark-mode .footer--social--icon .footer-social-svg path {
 
 body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   fill: #8B5CF6 !important;
+}
+
+/* Footer email styling */
+.footer-email {
+  display: block;
+  margin: 0.5rem 0 0 48px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: var(--darkblue);
+  text-align: left;
+}
+
+body.dark-mode .footer-email {
+  color: #ffffff;
+}
+
+/* Footer nav links hover */
+.footer--items ul > li > a {
+  transition: color 0.3s ease;
+}
+
+.footer--items ul > li > a:hover {
+  color: #8B5CF6;
+}
+
+/* Interest icons SVG styling */
+.interest-svg {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+.interest-svg path {
+  fill: #000000;
+  transition: all 0.3s ease;
+}
+
+.interest-icon:hover .interest-svg {
+  transform: scale(1.1);
+}
+
+.interest-icon:hover .interest-svg path {
+  fill: #8B5CF6;
+}
+
+body.dark-mode .interest-svg path {
+  fill: #ffffff;
+}
+
+body.dark-mode .interest-icon:hover .interest-svg path {
+  fill: #8B5CF6;
 }
 
 /* Responsive Screens */
@@ -1044,6 +1131,10 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
     gap: 20px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .about-skills-row {
+    flex-direction: column;
+    padding: 40px 20px;
   }
   .testimonial--section--card {
     padding: 25px;
@@ -1245,13 +1336,15 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
 }
 
 .tech-stack-section {
+  flex: 1;
   display: flex;
-  padding: 112px 84.3px; /* This will override the padding: 1rem; from the second .tech-stack-section rule */
+  padding: 40px;
   flex-direction: column;
-  align-items: center; /* Changed from flex-start to center for horizontal centering */
-  gap: 80px;
-  text-align: center; /* Ensures that text within the section is centered */
-  background: var(--bg-color);
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 12px;
 }
 
 .section--title {
@@ -1260,13 +1353,40 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
 }
 
 .tech-stack-title-container {
-  align-self: flex-start; /* Align the title to the start of the main axis */
+  align-self: center;
 }
 
 .tech-stack-title {
   font-size: 28px;
-  margin-bottom: 1rem; /* Add some space below the title */
+  margin-bottom: 0.25rem;
   color: var(--heading-color);
+}
+
+/* Certificates and Interests side by side */
+.cert-interest-row {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cert-interest-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.cert-interest-column .tech-stack-icons-container {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .cert-interest-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
 .tech-stack-icons-container {
@@ -1280,8 +1400,9 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
 .tech-stack-icon img {
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
-  width: 200px; /* Adjust width as needed */
-  height: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .tech-stack-icon:hover img {
@@ -1289,6 +1410,14 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
 
+.certificate-icon {
+  text-decoration: none;
+  display: block;
+}
+
+.certificate-icon img {
+  width: 120px;
+}
 
 .image-frame {
   padding: 10px; /* Adjust the padding to control the frame size */
@@ -1364,9 +1493,11 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
 }
 
 .image-modal-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -1511,7 +1642,7 @@ body.dark-mode .footer--social--icon a:hover .footer-social-svg path {
   }
 
   .image-modal-image {
-    height: 250px;
+    max-height: 40vh;
   }
 
   .image-modal-button {
