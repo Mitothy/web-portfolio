@@ -44,7 +44,7 @@ function TechStack() {
                             </svg>
                         </div>
                         <div className="tech-stack-icon interest-icon" title="League of Legends">
-                            <img src="./img/LoL.png" alt="League of Legends" loading="lazy" style={{width: '80px', height: '80px', objectFit: 'contain'}} />
+                            <img src="./img/Profile/Interest/LoL.png" alt="League of Legends" loading="lazy" style={{width: '80px', height: '80px', objectFit: 'contain'}} />
                         </div>
                         <div className="tech-stack-icon interest-icon" title="Gym">
                             <svg

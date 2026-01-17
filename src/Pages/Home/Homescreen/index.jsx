@@ -19,9 +19,15 @@ export default function Home() {
             <div className="fade-in-section">
                 <Experiences />
             </div>
-            <div className="fade-in-section about-skills-row">
-                <AboutMe />
-                <TechStack />
+            <div className="fade-in-section profile--section">
+                <div className="profile--header">
+                    <p className="sub--title">About Me</p>
+                    <h2 className="section--heading">Profile</h2>
+                </div>
+                <div className="about-skills-row">
+                    <AboutMe />
+                    <TechStack />
+                </div>
             </div>
             <Footer />
         </>

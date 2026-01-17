@@ -58,7 +58,7 @@
             "src": "./img/Fusevault/frontpage.png",
             "images": ["./img/Fusevault/frontpage.png", "./img/Fusevault/dashboard.png", "./img/Fusevault/transactions.png", "./img/Fusevault/upload.png", "./img/Fusevault/framework.png"],
             "title": "Fusevault",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.",
+            "description": "This project was my undergraduate thesis. We built a framework integrating blockchain, IPFS, and MongoDB to solve on-chain storage limitations. I learned about distributed systems architecture and implemented a RESTful API maintaining data integrity through immutable hash storage.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -67,7 +67,7 @@
             "src": "./img/Noteon/main.png",
             "images": ["./img/Noteon/main.png", "./img/Noteon/login.png", "./img/Noteon/sidebar.png", "./img/Noteon/note-options.png", "./img/Noteon/ai-options.png"],
             "title": "Noteon",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
+            "description": "This was my first experience with Android Studio and Kotlin programming. We were tasked with making an app for our machine project. Decided on an AI note taking app we built using Kotlin and connected Firebase for authentication and Gemini for our AI system.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -76,7 +76,7 @@
             "src": "./img/Diagnoassist/dashboard.png",
             "images": ["./img/Diagnoassist/dashboard.png", "./img/Diagnoassist/encounter.png", "./img/Diagnoassist/information.png", "./img/Diagnoassist/diagnosis.png"],
             "title": "Diagnoassist",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "description": "This is a pitch for our innovation class and was my introduction to enterprise-level fault-tolerant architecture using Spring Boot microservices, where I implemented database redundancy with Galera Cluster, dynamic failover routing, JWT-based stateless authentication, and ProxySQL load balancing to build a highly available, scalable, and resilient multi-service system.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -85,7 +85,7 @@
             "src": "./img/Enrollment System/dashboard.png",
             "images": ["./img/Enrollment System/dashboard.png", "./img/Enrollment System/enrollments.png", "./img/Enrollment System/courses.png", "./img/Enrollment System/services.png", "./img/Enrollment System/docker.png"],
             "title": "Enrollment System",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "This was my final project for a Distributed Computing course where we were tasked to make a fault-tolerant enrollment system using Spring Boot microservices. I learned about database redundancy with Galera Cluster, dynamic failover routing, and JWT authentication while implementing automatic load balancing with ProxySQL.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -94,7 +94,7 @@
             "src": "./img/Media Service/full.png",
             "images": ["./img/Media Service/full.png", "./img/Media Service/upload.png", "./img/Media Service/filesize.png", "./img/Media Service/logs.png"],
             "title": "Media Service",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.",
+            "description": "This was a problem set for a class where we built a concurrent video upload system using Java. I implemented producer-consumer patterns with blocking queues, MD5 hashing for duplicate prevention, and socket-based communication for handling multiple uploads simultaneously.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -103,7 +103,7 @@
             "src": "./img/HealthKonek/home.png",
             "images": ["./img/HealthKonek/home.png", "./img/HealthKonek/dashboard.png", "./img/HealthKonek/chat.png", "./img/HealthKonek/pharmacy.png"],
             "title": "HealthKonek",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.",
+            "description": "Me along with a group built a pitch for this AWS project targeting Philippine healthcare accessibility. I designed the cloud architecture using ECS, Lambda, RDS, and IoT Core, created complete user flows and wireframes, and developed a comprehensive business model with cost optimization strategies.",
             "link": "View In Github",
             "site": "https://github.com"
         },
@@ -148,7 +148,7 @@
             "src": "./img/ADVDB/nifi.png",
             "images": ["./img/ADVDB/nifi.png", "./img/ADVDB/schema.png", "./img/ADVDB/excel.png", "./img/ADVDB/data.png"],
             "title": "Database Development",
-            "description": "This is the starting point of one of my courses for school where we will be tackling advanced databases. The class has been very interesting to me and I am eager to learn more about these topics. So far we have covered ETL Tools and OLAP Functions.",
+            "description": "This is the starting point of one of my courses for school where we tackled advanced databases. The class was my first introduction to many advanced data science topics some of my favorite learnings were ETL Tools and OLAP Functions.",
             "link": "No Github :("
         }
     ],
@@ -156,141 +156,141 @@
         {
             "id": "mongoDB",
             "name": "mongoDb",
-            "icon": "./img/mongodb.png"
+            "icon": "./img/Profile/Skills/mongodb.png"
         },
         {
             "id": "SQL",
             "name": "SQL",
-            "icon": "./img/sql.png"
+            "icon": "./img/Profile/Skills/sql.png"
         },
         {
             "id": "Python",
             "name": "Python",
-            "icon": "./img/python.png"
+            "icon": "./img/Profile/Skills/python.png"
         },
         {
             "id": "React",
             "name": "React",
-            "icon": "./img/react.png"
+            "icon": "./img/Profile/Skills/react.png"
         },
         {
             "id": "Node",
             "name": "Node",
-            "icon": "./img/nodejs.png"
+            "icon": "./img/Profile/Skills/nodejs.png"
         },
         {
             "id": "Handlebars",
             "name": "Handlebars",
-            "icon": "./img/handlebars.png"
+            "icon": "./img/Profile/Skills/handlebars.png"
         },
         {
             "id": "C",
             "name": "C",
-            "icon": "./img/c.png"
+            "icon": "./img/Profile/Skills/c.png"
         },
         {
             "id": "JavaScript",
             "name": "JavaScript",
-            "icon": "./img/javascript.png"
+            "icon": "./img/Profile/Skills/javascript.png"
         }
         ,
         {
             "id": "OBS",
             "name": "OBS",
-            "icon": "./img/obs.png"
+            "icon": "./img/Profile/Skills/obs.png"
         },
         {
             "id": "GitHub",
             "name": "GitHub",
-            "icon": "./img/github.png"
+            "icon": "./img/Profile/Skills/github.png"
         },
         {
             "id": "HTML",
             "name": "HTML",
-            "icon": "./img/html.png"
+            "icon": "./img/Profile/Skills/html.png"
         },
         {
             "id": "CSS",
             "name": "CSS",
-            "icon": "./img/css.png"
+            "icon": "./img/Profile/Skills/css.png"
         },
         {
             "id": "Kotlin",
             "name": "Kotlin",
-            "icon": "./img/kotlin.png"
+            "icon": "./img/Profile/Skills/kotlin.png"
         },
         {
             "id": "Google Suite",
             "name": "Google Suite",
-            "icon": "./img/gsuite.png"
+            "icon": "./img/Profile/Skills/gsuite.png"
         },
         {
             "id": "Microsoft Office",
             "name": "Microsoft Office",
-            "icon": "./img/msoffice.png"
+            "icon": "./img/Profile/Skills/msoffice.png"
         },
         {
             "id": "Android Studio",
             "name": "Android Studio",
-            "icon": "./img/android-studio.png"
+            "icon": "./img/Profile/Skills/android-studio.png"
         },
         {
             "id": "Ubuntu",
             "name": "Ubuntu",
-            "icon": "./img/ubuntu.svg"
+            "icon": "./img/Profile/Skills/ubuntu.svg"
         },
         {
             "id": "Dagster",
             "name": "Dagster",
-            "icon": "./img/dagster.jpg"
+            "icon": "./img/Profile/Skills/dagster.jpg"
         },
         {
             "id": "Airflow",
             "name": "Airflow",
-            "icon": "./img/airflow.png"
+            "icon": "./img/Profile/Skills/airflow.png"
         },
         {
             "id": "VirtualBox",
             "name": "VirtualBox",
-            "icon": "./img/virtualbox.png"
+            "icon": "./img/Profile/Skills/virtualbox.png"
         },
         {
             "id": "IPFS",
             "name": "IPFS",
-            "icon": "./img/IPFS.png"
+            "icon": "./img/Profile/Skills/IPFS.png"
         },
         {
             "id": "Docker",
             "name": "Docker",
-            "icon": "./img/docker.png"
+            "icon": "./img/Profile/Skills/docker.png"
         },
         {
             "id": "Spring Boot",
             "name": "Spring Boot",
-            "icon": "./img/spring-boot.png"
+            "icon": "./img/Profile/Skills/spring-boot.png"
         },
         {
             "id": "Firebase",
             "name": "Firebase",
-            "icon": "./img/firebase.png"
+            "icon": "./img/Profile/Skills/firebase.png"
         },
         {
             "id": "Grafana",
             "name": "Grafana",
-            "icon": "./img/grafana.png"
+            "icon": "./img/Profile/Skills/grafana.png"
         }
     ],
     "certificates": [
         {
             "id": "google-cybersecurity",
             "name": "Google Cybersecurity",
-            "icon": "./img/cybersecurity.png",
+            "icon": "./img/Profile/Certificates/cybersecurity.png",
             "link": "https://www.credly.com/badges/b560ba94-9230-4689-a604-b44724701eb2"
         },
         {
             "id": "deep-learning",
             "name": "Deep Learning",
-            "icon": "./img/deeplearning.png",
+            "icon": "./img/Profile/Certificates/deeplearning.png",
             "link": "https://www.coursera.org/account/accomplishments/specialization/D19R6INP5BTF"
         }
     ],
@@ -298,7 +298,7 @@
         {
             "id": "league-of-legends",
             "name": "League of Legends",
-            "icon": "./img/LoL.png"
+            "icon": "./img/Profile/Interest/LoL.png"
         }
     ]
 }

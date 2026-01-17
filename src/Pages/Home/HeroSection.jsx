@@ -7,12 +7,12 @@ function HeroSection() {
                 <div className="hero--section--content">
                     <p className="section--title">Hey, I'm Timothy Joshua Tan</p>
                     <h1 className="hero--section--title">
-                        <span className="hero--section-title--color">Full Stack Developer</span>{" "}
+                        <span className="hero--section-title--color">Software Engineer</span>{" "}
                     </h1>
                     <p className="hero--section-description">
-                        I am currently an Undergraduate Student at De La Salle University Manila, <br />
-                        taking up a Bachelor of Science in Computer Science with a Major in <br /> Software Technology.
-                        I am a driven and committed person that wants to <br /> provide value to those around me.
+                        I'm a recent Computer Science Software Engineering Graduate from De La Salle University Manila
+                        with experience in Data Science and Backend. I love being challenged,
+                        enjoy building things that last, and never stop trying to learn new things.
                     </p>
                 </div>
                 <br />
